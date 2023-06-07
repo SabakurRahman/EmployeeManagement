@@ -6,8 +6,8 @@ namespace EmployeeManagement.Data
 {
     public class AppDbContext:DbContext
     {
-        public DbSet<Employee> Employee { get; set; }
-        public DbSet<EmployeeAttendance> EmployeeAttendance { get; set; }
+        public DbSet<Employee> tblEmployee { get; set; }
+        public DbSet<EmployeeAttendance> tblEmployeeAttendance { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionString = "server=localhost;user=root;password= ;database=employees";
